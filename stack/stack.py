@@ -20,12 +20,17 @@ from singly_linked_list import LinkedList
 #     def __len__(self):
 #         return len(self.storage)
 
+#  add element at first position in list
 #     def push(self, value):
-#         return self.storage.append(value)
+        # self.size += 1
+#         return self.storage.insert(0, value)
 
+#  remove first element in list
 #     def pop(self):
 #         if len(self.storage) > 0:
-#             return self.storage.pop()
+            # self.size -= 1
+#             node = self.storage.pop(0)
+#          return node
 
 class Stack:
     def __init__(self):
@@ -40,6 +45,9 @@ class Stack:
         return self.storage.add_to_head(value)
 
     def pop(self):
-        if self.size > 0:
+        if self.size == 0:
+            return None
+        elif self.size > 0:
             self.size -= 1
-            return self.storage.remove_head()
+            node = self.storage.remove_head()
+            return node
