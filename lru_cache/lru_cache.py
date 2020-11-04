@@ -8,6 +8,11 @@ class LRUCache:
     """
     def __init__(self, limit=10):
         pass
+    # should monitor max number of nodes it can hold (max == 10)
+    # should monitor curr # of nodes
+    # Doubly Linked list to match key value pair in order
+    # And a Dict
+    
 
     """
     Retrieves the value associated with the given key. Also

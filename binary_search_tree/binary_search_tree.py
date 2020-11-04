@@ -114,9 +114,9 @@ class BSTNode:
             # print that node
             print(curr_node)
             # add all children to the stack
-            if curr_node.left is not None:
+            if self.left is not None and node > self.value:
                 stack.push(curr_node.left)
-            if curr_node.right is not None:
+            if self.right is not None and node > self.value:
                 stack.push(curr_node.right)
         
 
@@ -124,9 +124,9 @@ class BSTNode:
     # Note: Research may be required
 
     # Print Pre-order recursive DFT
-    def pre_order_dft(self, node):
-        pass
+    # def pre_order_dft(self, node):
+    #     pass
 
-    # Print Post-order recursive DFT
-    def post_order_dft(self, node):
-        pass
+    # # Print Post-order recursive DFT
+    # def post_order_dft(self, node):
+    #     pass

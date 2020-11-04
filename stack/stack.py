@@ -22,15 +22,15 @@ from singly_linked_list import LinkedList
 
 #  add element at first position in list
 #     def push(self, value):
-        # self.size += 1
+#         self.size += 1
 #         return self.storage.insert(0, value)
 
 #  remove first element in list
 #     def pop(self):
 #         if len(self.storage) > 0:
-            # self.size -= 1
+#             self.size -= 1
 #             node = self.storage.pop(0)
-#          return node
+#         return node
 
 class Stack:
     def __init__(self):
